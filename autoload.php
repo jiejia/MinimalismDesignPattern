@@ -1,5 +1,5 @@
 <?php
 spl_autoload_register(function($class_name){
-    echo realpath('./' . $class_name . ".php");
-//    require realpath('./' . $class_name . ".php");
+    $class_name = str_replace('\\', '/', $class_name);
+    require dirname(__FILE__) . '/' . $class_name . '.php';
 });

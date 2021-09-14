@@ -6,7 +6,7 @@ namespace Strategy;
 
 class Context
 {
-    protected OperationInterface $operation;
+    protected  $operation;
 
     public function __construct(OperationInterface $operation)
     {
