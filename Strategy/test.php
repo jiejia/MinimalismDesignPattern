@@ -3,6 +3,6 @@ namespace Strategy;
 
 require_once "../autoload.php";
 
-$demo = new StrategyPatternDemo();
+$demo = new Demo();
 
 $demo->test();

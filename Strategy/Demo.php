@@ -4,7 +4,7 @@
 namespace Strategy;
 
 
-class StrategyPatternDemo
+class Demo
 {
     public function test()
     {
