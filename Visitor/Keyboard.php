@@ -3,7 +3,7 @@ namespace Visitor;
 
 class Keyboard implements ComputerPartInterface
 {
-    public function accept(ComputerPartVisitor $computerPartVisitor)
+    public function accept(ComputerPartVisitorInterface $computerPartVisitor)
     {
         $computerPartVisitor->visit($this);
     }

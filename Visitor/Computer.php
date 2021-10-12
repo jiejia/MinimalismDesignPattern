@@ -10,7 +10,7 @@ class Computer implements ComputerPartInterface
         $this->parts = [new Mouse(), new Keyboard(), new Monitor()];
     }
 
-    public function accept(ComputerPartVisitor $computerPartVisitor)
+    public function accept(ComputerPartVisitorInterface $computerPartVisitor)
     {
         for ($i = 0; $i < count($this->parts); $i ++) {
             $this->parts[$i]->accept($computerPartVisitor);

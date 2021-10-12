@@ -5,6 +5,6 @@ class ComputerPartDisplayVisitor implements ComputerPartVisitorInterface
 {
     public function visit($part)
     {
-        echo "Display " . $part;
+        echo "Display " . get_class($part) . "\n";
     }
 }

@@ -3,5 +3,5 @@ namespace Visitor;
 
 interface ComputerPartInterface
 {
-    public function accept(ComputerPartVisitor $computerPartVisitor);
+    public function accept(ComputerPartVisitorInterface $computerPartVisitor);
 }
